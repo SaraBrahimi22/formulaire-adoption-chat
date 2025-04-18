@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire d'adoption</title>
+</head>
+<body>
+    <h2>Formulaire de demande d'adoption 🐱</h2>
+
+    <form action="test.php" method="post">
+        <label>Nom complet :</label>
+        <input type="text" name="nom" required><br><br>
+
+        <label>Genre :</label><br>
+        <input type="radio" name="genre" value="Homme" required> Homme<br>
+        <input type="radio" name="genre" value="Femme"> Femme<br><br>
+
+        <label>Ville :</label>
+        <input type="text" name="ville" required><br><br>
+
+        <label>Nom du chat à adopter :</label>
+        <input type="text" name="nom_chat" required><br><br>
+
+        <label>Motivations pour l’adoption :</label><br>
+        <textarea name="motivation" rows="4" cols="40" required></textarea><br><br>
+
+        <label>Centres d’intérêt (facultatif) :</label><br>
+        <input type="checkbox" name="interets[]" value="Chats"> Chats<br>
+        <input type="checkbox" name="interets[]" value="Animaux"> Animaux<br>
+        <input type="checkbox" name="interets[]" value="Nature"> Nature<br><br>
+
+        <input type="submit" value="Envoyer ma demande">
+    </form>
+</body>
+</html>
